@@ -18,17 +18,22 @@ const Header = () => {
       <div className="navigation">
         <div className="navigationLeft">
           <ul>
-            {handleMouseEnter === true ? (
-              <li>Salut</li>
-            ) : (
-              <li
-                onMouseEnter={handleMouseEnter}
-                onMouseLeave={handleMouseLeave}
-                className="menuExp"
-              >
-                Explore
-              </li>
-            )}
+            <div className="exploreMenu"
+              onMouseEnter={handleMouseEnter}
+              onMouseLeave={handleMouseLeave}
+            >
+              {isOpen === true ? (
+                <ul>Explore
+                  <li>Nearby</li>
+                  <li>Top Rated</li>
+                  <li>B&B Retreats</li>
+                  <li>Add a Listing</li>
+                  <li>Write Review</li>
+                </ul>
+              ) : (
+                <li className="menuExp">Explore</li>
+              )}
+            </div>
 
             <li>Forum</li>
             <li>Blog</li>

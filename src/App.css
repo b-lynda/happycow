@@ -27,6 +27,12 @@ body {
   font-weight: 600;
 }
 
+.exploreMenu ul {
+  display: flex;
+  /* flex-direction: column; */
+  background-color: #9069cd;
+}
+
 .navigationRight {
   display: flex;
   gap: 8px;
