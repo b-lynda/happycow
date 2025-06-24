@@ -1,6 +1,13 @@
 import { useState } from "react";
 
-const DropdownMenu = (title, href) => {
+const DropdownMenu = ({name,title, href, tab}) => {
+    const tab = [
+        {title:"", href:""},
+        {title:"", href:""},
+        {title:"", href:""},
+        {title:"", href:""},
+        {title:"", href:""},
+    ]
   const [isOpen, setIsOpen] = useState(false);
   const handleMouseEnter = () => {
     setIsOpen(true);
@@ -14,24 +21,11 @@ const DropdownMenu = (title, href) => {
       onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave}
     >
-      Explore
+      {name}
       {isOpen && (
         <ul>
-          <li>
-            <a href={href}>{title}</a>
-          </li>
-          <li>
-            <a href={href}>{title}</a>
-          </li>
-          <li>
-            <a href={href}>{title}</a>
-          </li>
-          <li>
-            <a href={href}>{title}</a>
-          </li>
-          <li>
-            <a href={href}>{title}</a>
-          </li>
+          {tab.map(() => { 
+          })}
         </ul>
       )}
     </div>

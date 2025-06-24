@@ -28,6 +28,9 @@ body {
   font-weight: 600;
 }
 
+.navigationLeft ul {
+  margin-right: 10px;
+}
 .exploreMenu {
   display: flex;
   flex-direction: column;
@@ -35,9 +38,13 @@ body {
   font-weight: 600;
   color: #707070;
   margin-top: 12px;
-  width: 60px;
+  width: 65px;
 }
 
+.exploreMenu a{
+  text-decoration: none;
+  color: white;
+}
 .exploreMenu:hover {
   background-color: #9069cd;
   color: white;
