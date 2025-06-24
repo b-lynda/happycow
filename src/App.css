@@ -21,16 +21,37 @@ body {
  width: 100%;
 }
 
+
 .navigationLeft {
   display: flex;
-  align-content: center;
+  align-content: center important!;
   font-weight: 600;
 }
 
-.exploreMenu ul {
+.exploreMenu {
   display: flex;
-  /* flex-direction: column; */
+  flex-direction: column;
+  gap: 5px;
+  font-weight: 600;
+  color: #707070;
+  margin-top: 12px;
+  width: 60px;
+}
+
+.exploreMenu:hover {
   background-color: #9069cd;
+  color: white;
+  
+}
+
+.exploreMenu ul {
+display: flex;
+flex-direction: column;
+gap: 7px;
+background-color: #9069cd;
+color: white;
+font-weight: 300;
+width: 120px;
 }
 
 .navigationRight {

@@ -1,46 +1,24 @@
 import logo from "../assets/img/happycow-logo.svg";
+import DropdownMenu from "./DropdownMenu";
 import { FaMagnifyingGlass } from "react-icons/fa6";
-import { useState } from "react";
 
 const Header = () => {
-  const [isOpen, setIsOpen] = useState(false);
-  const handleMouseEnter = () => {
-    setIsOpen(true);
-  };
-  const handleMouseLeave = () => {
-    setIsOpen(false);
-  };
   return (
     <section className="header">
       <div className="logo">
         <img src={logo} alt="logo happycow" />
       </div>
+      <DropdownMenu title={"salut"} href={"#"} />
       <div className="navigation">
         <div className="navigationLeft">
           <ul>
-            <div className="exploreMenu"
-              onMouseEnter={handleMouseEnter}
-              onMouseLeave={handleMouseLeave}
-            >
-              {isOpen === true ? (
-                <ul>Explore
-                  <li>Nearby</li>
-                  <li>Top Rated</li>
-                  <li>B&B Retreats</li>
-                  <li>Add a Listing</li>
-                  <li>Write Review</li>
-                </ul>
-              ) : (
-                <li className="menuExp">Explore</li>
-              )}
-            </div>
-
             <li>Forum</li>
             <li>Blog</li>
             <li>The App</li>
             <li>Shop</li>
             <li>More</li>
           </ul>
+          
         </div>
         <div className="navigationRight">
           <FaMagnifyingGlass className="buttonSearch" />
