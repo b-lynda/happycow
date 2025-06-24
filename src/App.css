@@ -2,6 +2,9 @@ body {
   font-family: "Poppins", sans-serif;
 }
 
+/* ------------------------------------------
+--- H E A D E R ----------------------------*/
+
 .header {
   display: flex;
   align-content: center;
@@ -15,12 +18,11 @@ body {
 }
 
 .navigation {
- display: flex;
- justify-content: space-between;
- align-content: center;
- width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  width: 100%;
 }
-
 
 .navigationLeft {
   display: flex;
@@ -29,8 +31,9 @@ body {
 }
 
 .navigationLeft ul {
-  margin-right: 10px;
+  margin-right: 15px;
 }
+
 .exploreMenu {
   display: flex;
   flex-direction: column;
@@ -38,27 +41,26 @@ body {
   font-weight: 600;
   color: #707070;
   margin-top: 12px;
-  width: 65px;
 }
 
-.exploreMenu a{
+.exploreMenu a {
   text-decoration: none;
   color: white;
 }
 .exploreMenu:hover {
   background-color: #9069cd;
   color: white;
-  
+  width: 120px;
 }
 
 .exploreMenu ul {
-display: flex;
-flex-direction: column;
-gap: 7px;
-background-color: #9069cd;
-color: white;
-font-weight: 300;
-width: 120px;
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  background-color: #9069cd;
+  color: white;
+  font-weight: 300;
+  width: 100%;
 }
 
 .navigationRight {
@@ -68,8 +70,7 @@ width: 120px;
 
 .buttonSearch {
   font-size: 25px;
-  color:#9069cd;
-  
+  color: #9069cd;
 }
 .navigation ul {
   display: flex;
@@ -99,3 +100,32 @@ width: 120px;
   font-weight: 600;
   height: 40px;
 }
+
+/* ------------------------------------------
+--- M O D A L  L O G ----------------------*/
+
+.modalLog {
+  display: flex;
+  justify-self: center;
+  width: 840px;
+  height: 540px;
+  border-radius: 10px;
+  border: solid green;
+}
+
+.modalContainer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+}
+
+.modalLog button {
+  display: flex; 
+ justify-content: end;
+ align-self: flex-start;
+ padding: 5px;
+ margin: 3px;
+}
+ 
+  
