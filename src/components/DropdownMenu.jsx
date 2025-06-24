@@ -1,13 +1,6 @@
 import { useState } from "react";
 
-const DropdownMenu = ({name,title, href, tab}) => {
-    const tab = [
-        {title:"", href:""},
-        {title:"", href:""},
-        {title:"", href:""},
-        {title:"", href:""},
-        {title:"", href:""},
-    ]
+const DropdownMenu = ({name, tab}) => {
   const [isOpen, setIsOpen] = useState(false);
   const handleMouseEnter = () => {
     setIsOpen(true);
@@ -24,8 +17,11 @@ const DropdownMenu = ({name,title, href, tab}) => {
       {name}
       {isOpen && (
         <ul>
-          {tab.map(() => { 
-          <li><a href={href}></a>{title}</li>})}
+          {tab.map((item, index)=> {
+            <li key={index}>
+                <a href={item.href}>{item.title}</a>
+            </li>
+          })}
         </ul>
       )}
     </div>
