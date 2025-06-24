@@ -8,7 +8,16 @@ const Header = () => {
       <div className="logo">
         <img src={logo} alt="logo happycow" />
       </div>
-      <DropdownMenu name={"Explore"}title={"salut"} href={"#"} />
+      <DropdownMenu
+        name={"Explore"}
+        tab={[
+          { title: "Nearby", href: "#" },
+          { title: "Nearby", href: "#" },
+          { title: "Nearby", href: "#" },
+          { title: "Nearby", href: "#" },
+          { title: "Nearby", href: "#" },
+        ]}
+      />
       <div className="navigation">
         <div className="navigationLeft">
           <ul>
@@ -17,16 +26,16 @@ const Header = () => {
             <li>The App</li>
             <li>Shop</li>
           </ul>
-          <DropdownMenu tab={<li><a href={"#"}>title={"Nearby"}</a></li>} />
+          <DropdownMenu />
         </div>
-        
+
         <div className="navigationRight">
           <FaMagnifyingGlass className="buttonSearch" />
           <button className="addList">Add Listing</button>
           <button className="login">Login/Join</button>
         </div>
-      </div>*
-      
+      </div>
+      *
     </section>
   );
 };
