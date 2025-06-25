@@ -4,8 +4,9 @@ import DropdownMenu from "./DropdownMenu";
 import ModalLog from "./ModalLog";
 import { FaMagnifyingGlass } from "react-icons/fa6";
 
-const Header = () => {
+const Header = ({visible}) => {
   const [openModal, setOpenModal] = useState(false);
+  
   const tabExplore = [
     { title: "Nearby", href: "#" },
     { title: "Top Rated", href: "#" },

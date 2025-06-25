@@ -1,3 +1,4 @@
+
 // import { imgLogin } from "../assets/img/loginphoto.jpg";
 
 const ModalLog = ({closeModal}) => {

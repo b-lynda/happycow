@@ -109,17 +109,19 @@ body {
   position: fixed;
   justify-content: center;
   align-items: center;
-  width: 840px;
-  height: 540px;
+  width: 100vw;
+  height: 100vh;
   border-radius: 15px;
-  background-color: #9069cd;
+  background-color: rgba(50, 50, 50, 0.7);
 }
 
 .modalContainer {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  width: 100%;
+  width: 500px;
+  height: 400px;
+  background-color: #9069cd;
 }
 
 .modalLog button {
