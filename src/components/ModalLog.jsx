@@ -1,18 +1,20 @@
-// import { img } from "../assets/img/loginphoto.png";
+// import { imgLogin } from "../assets/img/loginphoto.jpg";
 
-const ModalLog = () => {
+const ModalLog = ({closeModal}) => {
   return (
     <section className="modalLog">
       <div className="modalContainer">
         <div className="modalDivLeft">
-            {/* <img src="" alt="image de plats sur modal côté gauche"/> */}
+            {/* <img src={ imgLogin } alt="image de plats sur modal côté gauche"/> */}
           <p>Ici est ma partie gauche</p>
         </div>
         <div className="modalDivRight">
           <p>Ici est ma partie droite</p>
         </div>
        
-      </div> <button> x </button>
+      </div> <button onClick={() => {
+        closeModal(false);
+      }}> x </button>
     </section>
   );
 };

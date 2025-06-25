@@ -22,6 +22,7 @@ const Header = () => {
   ];
   return (
     <section className="header">
+      {openModal && <ModalLog closeModal={setOpenModal}/>}
       <div className="logo">
         <img src={logo} alt="logo happycow" />
       </div>
@@ -40,10 +41,14 @@ const Header = () => {
         <div className="navigationRight">
           <FaMagnifyingGlass className="buttonSearch" />
           <button className="addList">Add Listing</button>
-          <button onClick={() => {
-            openModal && <ModalLog/>
-            setOpenModal(true)
-          }} className="login">Login/Join</button>
+          <button
+            onClick={() => {
+              setOpenModal(true);
+            }}
+            className="login"
+          >
+            Login/Join
+          </button>
         </div>
       </div>
     </section>
