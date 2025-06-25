@@ -1,11 +1,9 @@
 import logo from "../assets/img/happycow-logo.svg";
-import { useState } from "react";
 import DropdownMenu from "./DropdownMenu";
 import ModalLog from "./ModalLog";
 import { FaMagnifyingGlass } from "react-icons/fa6";
 
-const Header = ({visible}) => {
-  const [openModal, setOpenModal] = useState(false);
+const Header = ({openModal, setOpenModal}) => {
   
   const tabExplore = [
     { title: "Nearby", href: "#" },
@@ -23,7 +21,7 @@ const Header = ({visible}) => {
   ];
   return (
     <section className="header">
-      {openModal && <ModalLog closeModal={setOpenModal}/>}
+
       <div className="logo">
         <img src={logo} alt="logo happycow" />
       </div>
