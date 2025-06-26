@@ -1,21 +1,24 @@
+import { FaRegCircleXmark } from "react-icons/fa6";
 
-// import { imgLogin } from "../assets/img/loginphoto.jpg";
-
-const ModalLog = ({closeModal}) => {
+const ModalLog = ({ closeModal }) => {
   return (
     <section className="modalLog">
       <div className="modalContainer">
         <div className="modalDivLeft">
-            {/* <img src={ imgLogin } alt="image de plats sur modal côté gauche"/> */}
-          <p>Ici est ma partie gauche</p>
+          <h1>Happy Cook</h1>
+          <p>Welcome to HappyCow!</p>
         </div>
         <div className="modalDivRight">
-          <p>Ici est ma partie droite</p>
+          <h1>Happy Cook</h1>
+          <p>Welcome to HappyCow!</p>
         </div>
-       
-      </div> <button onClick={() => {
-        closeModal(false);
-      }}> x </button>
+        <FaRegCircleXmark
+          className="buttonClose"
+          onClick={() => {
+            closeModal(false);
+          }}
+        />
+      </div>
     </section>
   );
 };

@@ -107,31 +107,50 @@ body {
 .modalLog {
   display: flex;
   position: absolute;
+  top: 0;
+  left: 0;
   justify-content: center;
   align-items: center;
   width: 100vw;
   height: 100vh;
-  border-radius: 15px;
+  border-radius: 10px;
   background-color: rgba(50, 50, 50, 0.7);
 }
 
 .modalContainer {
   display: flex;
-  justify-content: space-around;
+  border-radius: 20px;
+  justify-content: space-between;
   align-items: center;
-  width: 500px;
-  height: 400px;
-  background-color: #9069cd;
+  width: 545px;
+  height: 445px;
+  background-color: #ffffff;
 }
 
-.modalLog button {
-  display: flex; 
- justify-content: end;
- align-self: flex-start;
- padding: 15px;
- margin: 10px;
- border-radius: 20%;
- border-style: none;
+.buttonClose {
+  display: flex;
+  justify-content: end;
+  align-self: flex-start;
+  padding: 15px;
+  margin: 10px;
 }
- 
-  
+
+.modalDivLeft {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  border-bottom-left-radius: 20px;
+  border-top-left-radius: 20px;
+  height: 100%;
+  width: 100%;
+  background-image: url(/src/assets/img/loginphoto.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.modalDivLeft h1, p {
+  color: white;
+  font-weight: 700;
+  font-size: 18px;
+  margin-left: 30px;
+}
