@@ -1,7 +1,12 @@
-const Home = () => {
-    return (
-        <section>
+import data from '../assets/data.json';
 
+const Home = () => {
+
+
+    return (
+        <section className="homeContainer">
+          
+            
         </section>
     )
 }
