@@ -281,8 +281,68 @@ body {
 --------------------------------------------------- H O M E  B L O C ----------------------------
 ----------------------------------------------------------------------------------------------*/
 
-.homeContainer{
-  width: 1050px;
-  margin: 20px auto;
+.homeContainer {
+  width: 1300px;
+  margin: 50px auto;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
 }
 
+.titleRestaurantsScroll {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.titleRestaurantsScroll h1 {
+  font-size: 30px;
+  font-weight: 550;
+}
+
+.titleRestaurantsScroll a {
+  color: #9069cd;
+  font-weight: 650;
+  text-decoration: none;
+}
+
+.scrollRestaurants {
+  display: flex;
+}
+
+.ficheRestaurantScroll {
+  display: flex;
+  height: 350px;
+  overflow: scroll;
+  gap: 15px;
+}
+
+.ficheRestaurantStart {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.ficheRestaurantStart img {
+  width: 270px;
+  height: 177px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.address {
+  color: #707070;
+  font-weight: 580;
+}
+
+.ficheRestaurantStart a {
+  text-decoration: none;
+  font-weight: 600;
+  color: black;
+  font-size: 18px;
+}
+
+.descRestaurantFicheScroll {
+  font-size: 15px;
+  line-height: 22px;
+}
