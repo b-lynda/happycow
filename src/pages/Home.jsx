@@ -5,7 +5,7 @@ import { MdNavigateNext } from "react-icons/md";
 
 const Home = () => {
   const data = datajson;
-
+    const stars = [1, 2, 3, 4, 5];
   return (
     <section className="homeContainer">
       <div className="titleRestaurantsScroll">
@@ -26,7 +26,7 @@ const Home = () => {
                     {element.address}
                   </p>
                   <div className="rateRestaurantFicheScroll">
-                    <i></i>
+                    {/* {for (i={element.rating} >= stars;  i++){<FaStar/>} */}
                   </div>
                   <div className="descRestaurantFicheScroll">
                     <p>{element.description}</p>
