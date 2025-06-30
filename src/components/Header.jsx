@@ -1,10 +1,10 @@
 import logo from "../assets/img/happycow-logo.svg";
 import DropdownMenu from "./DropdownMenu";
 import ModalLog from "./ModalLog";
-import { FaMagnifyingGlass } from "react-icons/fa6";
+import { Link } from "react-router-dom";
+import search from "../assets/img/chercher.svg";
 
-const Header = ({openModal, setOpenModal}) => {
-  
+const Header = ({ openModal, setOpenModal }) => {
   const tabExplore = [
     { title: "Nearby", href: "#" },
     { title: "Top Rated", href: "#" },
@@ -21,9 +21,10 @@ const Header = ({openModal, setOpenModal}) => {
   ];
   return (
     <section className="header">
-
       <div className="logo">
-        <img src={logo} alt="logo happycow" />
+        <Link to="/">
+          <img src={logo} alt="logo happycow" />
+        </Link>
       </div>
       <DropdownMenu name={"Explore"} tab={tabExplore} />
       <div className="navigation">
@@ -38,7 +39,7 @@ const Header = ({openModal, setOpenModal}) => {
         </div>
 
         <div className="navigationRight">
-          <FaMagnifyingGlass className="buttonSearch" />
+          <img src={search} className="buttonSearch" alt="" />
           <button className="addList">Add Listing</button>
           <button
             onClick={() => {

@@ -37,7 +37,7 @@ const ModalLog = ({ closeModal }) => {
             {displayLogJoin ? <Login /> : <Signup />}
           </div>
         </div>
-        <FaRegCircleXmark size="60px" color="red"
+        <FaRegCircleXmark size="80px" color="red"
           className="buttonClose"
           onClick={() => {
             closeModal(false);

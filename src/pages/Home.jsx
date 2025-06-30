@@ -1,35 +1,44 @@
 import datajson from "../assets/restaurants.json";
+import { Link } from "react-router-dom";
 import { FaStar } from "react-icons/fa";
-import { MdNavigateNext } from "react-icons/md";
-
+import next from "../assets/img/next-direction.svg";
 
 const Home = () => {
   const data = datajson;
-    const stars = [1, 2, 3, 4, 5];
+
+  const makingStars = (number) => {
+    const starsTab = [];
+    for (let i = 0; i < number; i++) {
+      starsTab.push(<FaStar color="#FFC200" />);
+    }
+    return starsTab;
+  };
+
+
   return (
     <section className="homeContainer">
       <div className="titleRestaurantsScroll">
         <h1>Restaurants autour de Paris</h1>
-        <a href="#">Voir tous <MdNavigateNext fontSize="25px" /></a>
+        <div>
+          <Link to="/restaurants">
+            Voir tous <img src={next} alt="" />
+          </Link>
+        </div>
       </div>
       <div className="scrollRestaurants">
         <div className="ficheRestaurantScroll">
-          {data.map((element, index) => {
+          {data.map((element) => {
             return (
               <>
                 <div className="ficheRestaurantStart">
-                  <img key={element.placeId} src={element.thumbnail} alt="" />
-                  <a key={element.placeId} href={element.link}>
-                    {element.name}
-                  </a>
-                  <p className="address" key={element.placeId}>
-                    {element.address}
-                  </p>
+                  <img src={element.thumbnail} alt="" />
+                  <a href={element.link}>{element.name}</a>
+                  <p className="address">{element.address}</p>
                   <div className="rateRestaurantFicheScroll">
-                    {/* {for (i={element.rating} >= stars;  i++){<FaStar/>} */}
+                    <p>{makingStars(element.rating)}</p>
                   </div>
                   <div className="descRestaurantFicheScroll">
-                    <p>{element.description}</p>
+                    {element.description}
                   </div>
                 </div>
               </>
