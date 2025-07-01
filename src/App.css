@@ -374,14 +374,36 @@ body {
   height: 180px;
 }
 
+.sectionSearchBar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
 .searchBar {
   display: flex;
   justify-content: space-between;
   gap: 3px;
-  width: 60%;
   background-color: white;
   padding: 10px 10px;
   border-radius: 7px;
+  width: 800px;
+}
+
+.resultsSearchBar {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2px;
+  background-color: white;
+  position: fixed;
+  width: 800px;
+  padding: 10px;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  margin-top: 50px;
 }
 
 .searchBar input {
@@ -392,14 +414,16 @@ body {
 }
 
 
+
 .searchBar button {
   background-color: #9069cd;
   border-style: none;
   width: 10%;
+  height: 30px;
   border-radius: 5px;
   color: white;
   font-family: "Poppins", sans-serif;
-  font-size: 15px;
+  font-size: 18px;
   font-weight: 600;
 }
 
@@ -407,10 +431,12 @@ body {
   display: flex;
   justify-content: space-between;
   margin-top: 15px;
+  height: 500px;
 }
 
 .displayAllRestaurants {
   display: flex;
+  overflow: scroll;
   width: 50%;
   justify-content: column;
   flex-wrap: wrap;

@@ -1,25 +1,15 @@
 import datajson from "../assets/restaurants.json";
 import SearchBar from "../components/SearchBar";
-import { FaStar } from "react-icons/fa";
 
 const Restaurant = () => {
   const data = datajson;
-  // fonction me permettant de générer des notes avec étoile :
-  const makingStars = (number) => {
-    // création d'un tableau vide
-    const starsTab = [];
-    // boucle sur le param envoyer dans le tableau
-    for (let i = 0; i < number; i++) {
-      starsTab.push(<FaStar color="#FFC200" />);
-    }
-    return starsTab;
-  };
+  
   return (
     <section className="displayRestaurants">
       <div className="searchDivRestaurants">
         <SearchBar />
       </div>
-    <div className="pagination">pages</div>
+  
       <div className="displayRestaurantsMap">
         
         <div className="displayAllRestaurants">
@@ -46,7 +36,7 @@ const Restaurant = () => {
             </div>
           </div>
         </div>
-        <div className="displayMap"></div>
+        <div className="displayMap">map</div>
       </div>
     </section>
   );
