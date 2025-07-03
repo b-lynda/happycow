@@ -1,7 +1,6 @@
 import datajson from "../assets/restaurants.json";
-import { Link } from "react-router-dom";
+import SearchBar from "../components/SearchBar";
 import { FaStar } from "react-icons/fa";
-import next from "../assets/img/next-direction.svg";
 
 const Home = () => {
   const data = datajson;
@@ -14,16 +13,14 @@ const Home = () => {
     return starsTab;
   };
 
-
   return (
     <section className="homeContainer">
+ 
+      <div className="searchDivRestaurants">
+        <SearchBar />
+      </div>
       <div className="titleRestaurantsScroll">
         <h1>Restaurants autour de Paris</h1>
-        <div>
-          <Link to="/restaurants">
-            Voir tous <img src={next} alt="" />
-          </Link>
-        </div>
       </div>
       <div className="scrollRestaurants">
         <div className="ficheRestaurantScroll">

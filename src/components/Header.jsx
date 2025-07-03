@@ -2,7 +2,6 @@ import logo from "../assets/img/happycow-logo.svg";
 import DropdownMenu from "./DropdownMenu";
 import ModalLog from "./ModalLog";
 import { Link } from "react-router-dom";
-import search from "../assets/img/chercher.svg";
 
 const Header = ({ openModal, setOpenModal }) => {
   const tabExplore = [
@@ -39,7 +38,6 @@ const Header = ({ openModal, setOpenModal }) => {
         </div>
 
         <div className="navigationRight">
-          <img src={search} className="buttonSearch" alt="" />
           <button className="addList">Add Listing</button>
           <button
             onClick={() => {

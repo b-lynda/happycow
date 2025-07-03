@@ -1,4 +1,3 @@
-import img from "../assets/img/chercher.svg";
 import datajson from "../assets/restaurants.json";
 import { useState, useEffect } from "react";
 
@@ -34,23 +33,23 @@ const SearchBar = () => {
           GO
         </button>
       </div>
-
-      {displayKeyWord &&
-        datas
-          .filter((element) => {
-            return element.name
-              .toLowerCase()
-              .includes(searchKeyWord.toLowerCase());
-          })
-          .map((element, index) => {
-            return (
-              <div className="resultsSearchBar">
-                <a key={index} href={element.name}>
+      {searchKeyWord && (
+        <div className="resultsSearchBar">
+          {datas
+            .filter((element) => {
+              return element.name
+                .toLowerCase()
+                .includes(searchKeyWord.toLowerCase());
+            })
+            .map((element, index) => {
+              return (
+                <a key={index} href={element.link}>
                   {element.name}
                 </a>
-              </div>
-            );
-          })}
+              );
+            })}
+        </div>
+      )}
     </section>
   );
 };
