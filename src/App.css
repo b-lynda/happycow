@@ -79,17 +79,7 @@ body {
   color: #707070;
 }
 
-.addList {
-  background-color: white;
-  color: #9069cd;
-  border-radius: 3px;
-  border-color: #9069cd;
-  border-style: solid;
-  font-family: "Poppins", sans-serif;
-  font-size: 16px;
-  font-weight: 600;
-  height: 40px;
-}
+
 .login {
   background-color: #9069cd;
   color: white;

@@ -1,4 +1,5 @@
 import datajson from "../assets/restaurants.json";
+import Map from "../components/Map";
 import SearchBar from "../components/SearchBar";
 import { FaStar } from "react-icons/fa";
 
@@ -17,10 +18,11 @@ const Home = () => {
     <section className="homeContainer">
  
       <div className="searchDivRestaurants">
-        <SearchBar />
+        <SearchBar /><Map />
       </div>
       <div className="titleRestaurantsScroll">
         <h1>Restaurants autour de Paris</h1>
+        
       </div>
       <div className="scrollRestaurants">
         <div className="ficheRestaurantScroll">

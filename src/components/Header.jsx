@@ -38,7 +38,7 @@ const Header = ({ openModal, setOpenModal }) => {
         </div>
 
         <div className="navigationRight">
-          <button className="addList">Add Listing</button>
+          
           <button
             onClick={() => {
               setOpenModal(true);
