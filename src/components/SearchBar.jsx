@@ -6,6 +6,7 @@ const SearchBar = () => {
   const [datas, setDatas] = useState([]);
   const [displayKeyWord, setDisplayKeyWord] = useState(false);
   const [searchKeyWord, setSearchKeyWord] = useState("");
+  
   useEffect(() => {
     setDatas(datajson);
   }, []);
