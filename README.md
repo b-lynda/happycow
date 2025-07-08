@@ -7,6 +7,7 @@ Ce projet s'inspire du site web : (https://www.happycow.net/) afin de travailler
 * [ ] _Création d'un système de pagination_<br>
 * [ ] _Création d'un systeme d'authentification_<br>
 * [ ] _Intégration d'une map avec react-leaflet_<br>
+* [ ] _Rendre le projet responsive_
 
 
 
