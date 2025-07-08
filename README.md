@@ -1,6 +1,6 @@
 # Happycow 
 
-Ce projet est une réplique du site (https://www.happycow.net/) afin de travailler les notions **React** vu en cours, telles que :  
+Ce projet s'inspire du site web : (https://www.happycow.net/) afin de travailler les notions **React** vu en cours, telles que :  
 
 * [x] _Création de composants réutilisables._<br>
 * [x] _Création d'une barre de recherche avec auto-complétion_<br>
